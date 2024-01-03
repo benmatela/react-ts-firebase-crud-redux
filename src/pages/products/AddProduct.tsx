@@ -54,6 +54,8 @@ export const AddProduct = ({ userId }: AddProductProps) => {
           toastOwner: product.name,
         })
       );
+
+      form.reset();
     } catch (error: any) {
       console.error(error);
     }

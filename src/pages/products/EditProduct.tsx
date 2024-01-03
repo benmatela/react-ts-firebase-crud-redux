@@ -73,6 +73,8 @@ export const EditProduct = ({
 
       setEditProduct({} as IProduct);
       setProductName("");
+
+      form.reset();
     } catch (error: any) {
       console.error(error);
       setIsLoading(true);
