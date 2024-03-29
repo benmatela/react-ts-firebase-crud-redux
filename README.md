@@ -5,6 +5,29 @@ https://benmatela.github.io/react-ts-firebase-crud-redux/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Before you begin, make sure to create a new file `src/utils/env.ts` (include in gitignore to not expose your configs)
+:
+
+``` ts
+import { NODE_ENV } from "../../models/enums/node-env.enum";
+
+const GOOGLE = {
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
+};
+
+const environments = {
+  google: GOOGLE,
+};
+
+export default environments;
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
